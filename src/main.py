@@ -5,10 +5,6 @@ import config
 import mesh
 import payoff
 import engine
-import os
-os.environ["JAX_ENABLE_X64"] = "True"
-import jax
-jax.config.update("jax_enable_x64", True)
 def bilinear_interpolate(V, s_x, s_y, target_x, target_y):
     """Interpolate V at a fixed point on a uniform 2D grid."""
     i = int((target_x - float(s_x[0])) /
