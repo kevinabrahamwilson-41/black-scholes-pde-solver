@@ -125,7 +125,7 @@ The time-step count is fixed at 40,000 while the spatial grid is refined.
 The following figure shows the interpolated option price across spatial
 grid resolutions with the time-step count fixed at 40,000.
 
-![Spatial convergence of the 2D Black–Scholes PDE solver](spatial_convergence.png)
+![Spatial convergence of the 2D Black–Scholes PDE solver](src/spatial_convergence.png)
 
 **Finding:** The price change between successive grids decreases from 0.001785 to 0.000526 as the grid is refined. This suggests spatial stability, but these results alone do not establish a formal convergence order.
 
